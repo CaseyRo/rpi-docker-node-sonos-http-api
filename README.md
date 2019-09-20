@@ -31,7 +31,7 @@ docker run \
   jonmaddox/rpi-docker-node-sonos-http-api
 ```
 
-Or if you'd like to do this using composer
+Or if you'd like to do this using docker-compose
 ```yaml
 version: '2'
 services:
