@@ -31,4 +31,21 @@ docker run \
   jonmaddox/rpi-docker-node-sonos-http-api
 ```
 
+Or if you'd like to do this using composer
+```yaml
+version: '2'
+services:
+  sonoshttpapi:
+    image: jonmaddox/rpi-docker-node-sonos-http-api
+    restart: always
+    network_mode: host
+    volumes:
+      - ./settings:/app/settings
+      - ./clips:/app/clips
+      - ./cache:/app/cache
+      - ./presets:/app/presets
+```
+
+I've taken the liberty to fork [@jonmaddox](https://github.com/jonmaddox)'s docker image and added composer to this.
+
 This wrapper was based on [@chrisns](https://github.com/chrisns)'s [x86 wrapper](https://github.com/chrisns/docker-node-sonos-http-api).
