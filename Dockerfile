@@ -2,8 +2,8 @@ FROM resin/raspberry-pi-alpine-node
 
 WORKDIR /app
 
-RUN apk --no-cache add tar curl && \
-  curl -L https://github.com/jishi/node-sonos-http-api/archive/master.tar.gz | tar xz --strip-components=1 -C /app && \
+RUN apk --no-cache add tar curl
+RUN curl -L https://github.com/jishi/node-sonos-http-api/archive/master.tar.gz | tar xz --strip-components=1 -C /app && \
   mkdir cache && \
   ln -s settings/settings.json && \
   npm install --production && \
