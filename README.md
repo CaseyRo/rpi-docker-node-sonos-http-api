@@ -46,6 +46,4 @@ services:
       - ./presets:/app/presets
 ```
 
-I've taken the liberty to fork [@jonmaddox](https://github.com/jonmaddox)'s docker image and added composer to this.
-
-This wrapper was based on [@chrisns](https://github.com/chrisns)'s [x86 wrapper](https://github.com/chrisns/docker-node-sonos-http-api).
+I've taken the liberty to fork [@jonmaddox](https://github.com/jonmaddox)'s docker image and added docker-compose to this.
