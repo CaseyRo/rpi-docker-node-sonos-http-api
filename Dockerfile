@@ -6,7 +6,7 @@ RUN apk --no-cache add tar curl
 RUN curl -L https://github.com/jishi/node-sonos-http-api/archive/master.tar.gz | tar xz --strip-components=1 -C /app && \
   mkdir cache && \
   ln -s settings/settings.json && \
-  npm install --production && \
+  npm install && \
   rm -rf /tmp/* /root/.npm
 
 EXPOSE 5005
