@@ -2,7 +2,8 @@ FROM balenalib/raspberrypi4-64-node
 
 WORKDIR /app
 
-RUN apk --no-cache add tar curl
+RUN apt-get -qq update
+RUN apt-get -qq -y install curl
 RUN curl -L https://github.com/jishi/node-sonos-http-api/archive/master.tar.gz | tar xz --strip-components=1 -C /app && \
   mkdir cache && \
   ln -s settings/settings.json && \
