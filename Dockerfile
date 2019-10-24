@@ -1,14 +1,13 @@
-FROM balenalib/raspberrypi4-64-node
+FROM node:10-alpine
 
 WORKDIR /app
 
-RUN apt-get -qq update
-RUN apt-get -qq -y install curl
-RUN curl -L https://github.com/jishi/node-sonos-http-api/archive/master.tar.gz | tar xz --strip-components=1 -C /app && \
-  mkdir cache && \
-  ln -s settings/settings.json && \
-  npm install && \
-  rm -rf /tmp/* /root/.npm
+RUN apk --no-cache add tar curl && \
+curl -L https://github.com/jishi/node-sonos-http-api/archive/master.tar.gz | tar xz --strip-components=1 -C /app && \
+mkdir cache && \
+ln -s settings/settings.json && \
+npm install --production && \
+rm -rf /tmp/* /root/.npm
 
 EXPOSE 5005
 
