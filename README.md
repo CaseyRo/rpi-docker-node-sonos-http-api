@@ -1,8 +1,8 @@
 # rpi-docker-node-sonos-http-api
 Docker wrapper for https://github.com/jishi/node-sonos-http-api for running on a Raspberry Pi.
 
-[![Docker Stars](https://img.shields.io/docker/stars/jonmaddox/rpi-docker-node-sonos-http-api.svg)](https://hub.docker.com/r/jonmaddox/rpi-docker-node-sonos-http-api)
-[![Docker Pulls](https://img.shields.io/docker/pulls/jonmaddox/rpi-docker-node-sonos-http-api.svg)](https://hub.docker.com/r/jonmaddox/rpi-docker-node-sonos-http-api)
+[![Docker Stars](https://img.shields.io/docker/stars/keesromkes/rpi-docker-node-sonos-http-api.svg)](https://cloud.docker.com/u/keesromkes/repository/docker/keesromkes/rpi-docker-node-sonos-http-api)
+[![Docker Pulls](https://img.shields.io/docker/pulls/keesromkes/rpi-docker-node-sonos-http-api.svg)](https://cloud.docker.com/u/keesromkes/repository/docker/keesromkes/rpi-docker-node-sonos-http-api)
 
 ## Usage
 Refer to https://github.com/jishi/node-sonos-http-api for all the configuration detail
@@ -31,19 +31,6 @@ docker run \
   jonmaddox/rpi-docker-node-sonos-http-api
 ```
 
-Or if you'd like to do this using docker-compose
-```yaml
-version: '2'
-services:
-  sonoshttpapi:
-    image: jonmaddox/rpi-docker-node-sonos-http-api
-    restart: always
-    network_mode: host
-    volumes:
-      - ./settings:/app/settings
-      - ./clips:/app/clips
-      - ./cache:/app/cache
-      - ./presets:/app/presets
-```
+Or if you'd like to do this using docker-compose - `docker-compose up -d` should do the trick.
 
-I've taken the liberty to fork [@jonmaddox](https://github.com/jonmaddox)'s docker image and added docker-compose to this.
+I've taken the liberty to fork [@jonmaddox](https://github.com/jonmaddox)'s docker image and added docker-compose to this, next to a different main image to pull from. Credit goes to him in this regard!
