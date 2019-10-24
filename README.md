@@ -3,6 +3,7 @@ Docker wrapper for https://github.com/jishi/node-sonos-http-api for running on a
 
 [![Docker Stars](https://img.shields.io/docker/stars/keesromkes/rpi-docker-node-sonos-http-api.svg)](https://cloud.docker.com/u/keesromkes/repository/docker/keesromkes/rpi-docker-node-sonos-http-api)
 [![Docker Pulls](https://img.shields.io/docker/pulls/keesromkes/rpi-docker-node-sonos-http-api.svg)](https://cloud.docker.com/u/keesromkes/repository/docker/keesromkes/rpi-docker-node-sonos-http-api)
+![Docker Cloud Automated build](https://img.shields.io/docker/cloud/automated/keesromkes/rpi-docker-node-sonos-http-api)
 
 ## Usage
 Refer to [node-sonos-http-api](https://github.com/jishi/node-sonos-http-api) for all the configuration detail
