@@ -1,0 +1,11 @@
+version: '2'
+services:
+  sonoshttpapi:
+    image: keesromkes/sonoshttpapi
+    restart: always
+    network_mode: host
+    volumes:
+      - ./settings:/app/settings
+      - ./clips:/app/clips
+      - ./cache:/app/cache
+      - ./presets:/app/presets
