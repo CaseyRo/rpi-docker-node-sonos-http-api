@@ -5,7 +5,7 @@ Docker wrapper for https://github.com/jishi/node-sonos-http-api for running on a
 [![Docker Pulls](https://img.shields.io/docker/pulls/keesromkes/rpi-docker-node-sonos-http-api.svg)](https://cloud.docker.com/u/keesromkes/repository/docker/keesromkes/rpi-docker-node-sonos-http-api)
 
 ## Usage
-Refer to https://github.com/jishi/node-sonos-http-api for all the configuration detail
+Refer to [node-sonos-http-api](https://github.com/jishi/node-sonos-http-api) for all the configuration detail
 
 First make the config and local dirs up
 ```bash
