@@ -6,6 +6,9 @@ Docker wrapper for https://github.com/jishi/node-sonos-http-api for running on a
 ![Docker Cloud Automated build](https://img.shields.io/docker/cloud/automated/keesromkes/rpi-docker-node-sonos-http-api)
 ![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/keesromkes/rpi-docker-node-sonos-http-api)
 
+* [This project on Docker](https://cloud.docker.com/repository/docker/keesromkes/rpi-docker-node-sonos-http-api)
+* [This project on Github](https://github.com/Keesromkes/rpi-docker-node-sonos-http-api)
+
 ## Usage
 Refer to [node-sonos-http-api](https://github.com/jishi/node-sonos-http-api) for all the configuration detail
 
@@ -30,7 +33,7 @@ docker run \
   -v `pwd`/clips:/app/static/clips \
   -v `pwd`/cache:/app/cache \
   -v `pwd`/presets:/app/presets \
-  jonmaddox/rpi-docker-node-sonos-http-api
+  keesromkes/rpi-docker-node-sonos-http-api
 ```
 
 Or if you'd like to do this using docker-compose - `docker-compose up -d` should do the trick.
