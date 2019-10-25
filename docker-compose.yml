@@ -1,7 +1,7 @@
 version: '2'
 services:
   sonoshttpapi:
-    image: Keesromkes/rpi-docker-node-sonos-http-api
+    image: keesromkes/rpi-docker-node-sonos-http-api
     restart: always
     network_mode: host
     volumes:
